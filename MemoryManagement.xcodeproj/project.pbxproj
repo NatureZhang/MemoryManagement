@@ -13,6 +13,8 @@
 		D9201D551CF5477A0005A518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9201D531CF5477A0005A518 /* Main.storyboard */; };
 		D9201D571CF5477A0005A518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9201D561CF5477A0005A518 /* Assets.xcassets */; };
 		D9201D5A1CF5477A0005A518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9201D581CF5477A0005A518 /* LaunchScreen.storyboard */; };
+		D9201D671CF59F9C0005A518 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9201D661CF59F9C0005A518 /* MyObject.m */; };
+		D9201D6A1CF6A4A50005A518 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = D9201D681CF6A4A50005A518 /* block.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		D9201D561CF5477A0005A518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9201D591CF5477A0005A518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9201D5B1CF5477A0005A518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9201D651CF59F9C0005A518 /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		D9201D661CF59F9C0005A518 /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
+		D9201D681CF6A4A50005A518 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = block.c; sourceTree = "<group>"; };
+		D9201D691CF6A4A50005A518 /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				D9201D4E1CF5477A0005A518 /* AppDelegate.m */,
 				D9201D501CF5477A0005A518 /* ViewController.h */,
 				D9201D511CF5477A0005A518 /* ViewController.m */,
+				D9201D681CF6A4A50005A518 /* block.c */,
+				D9201D691CF6A4A50005A518 /* block.h */,
+				D9201D651CF59F9C0005A518 /* MyObject.h */,
+				D9201D661CF59F9C0005A518 /* MyObject.m */,
 				D9201D531CF5477A0005A518 /* Main.storyboard */,
 				D9201D561CF5477A0005A518 /* Assets.xcassets */,
 				D9201D581CF5477A0005A518 /* LaunchScreen.storyboard */,
@@ -149,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9201D6A1CF6A4A50005A518 /* block.c in Sources */,
 				D9201D521CF5477A0005A518 /* ViewController.m in Sources */,
 				D9201D4F1CF5477A0005A518 /* AppDelegate.m in Sources */,
+				D9201D671CF59F9C0005A518 /* MyObject.m in Sources */,
 				D9201D4C1CF5477A0005A518 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = MemoryManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JY.MemoryManagement;
@@ -272,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = MemoryManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JY.MemoryManagement;
